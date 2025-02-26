@@ -1,0 +1,212 @@
+.news-feed-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.news-feed-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.news-feed-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.news-feed-subtitle {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.category-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.category-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.category-button:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.category-button.active {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.source-select-wrapper {
+  position: relative;
+}
+
+.source-select {
+  appearance: none;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 0.375rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.source-select:focus {
+  border-color: #4a5568;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #9ca3af;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article-card {
+  background-color: #242424;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: background-color 0.2s;
+}
+
+.article-card:hover {
+  background-color: #2d2d2d;
+}
+
+.article-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.article-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.impact-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  background-color: #333333;
+  color: #d1d5db;
+}
+
+.impact-tag.high {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+}
+
+.category-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  background-color: #333333;
+  color: #d1d5db;
+}
+
+.article-description {
+  color: #9ca3af;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.article-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.read-more-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.read-more-button:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.read-more-button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: transform 0.2s;
+}
+
+.read-more-button:hover svg {
+  transform: translateX(0.25rem);
+}
+
+.save-button {
+  color: #9ca3af;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.save-button:hover {
+  color: #ffffff;
+  background-color: #333333;
+} 
