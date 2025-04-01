@@ -38,7 +38,8 @@ const Sidebar: React.FC<SidebarProps> = ({ userName = "Vaibhav", userImage = "/d
         padding: '16px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '24px'
+        gap: '24px',
+        backgroundColor: 'var(--color-bg-secondary)'
       }}
     >
       <div className="sidebar-header" style={{ marginBottom: '16px' }}>

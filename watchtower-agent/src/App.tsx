@@ -15,17 +15,17 @@ function App() {
     <ThemeProvider>
       <Router>
         <div className="app-container">
-          {/* <Sidebar /> */}
+          <Sidebar />
           <main className="main-content">
             <Routes>
-              {/* <Route path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route path="/" element={<Navigate to="/dashboard" replace />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/newsfeed" element={<NewsFeed />} />
               <Route path="/article/:id" element={<ArticleDetail />} />
               <Route path="/chat" element={<ChatType />} />
               <Route path="/recommended-actions" element={<RecommendedActions />} />
-              <Route path="/recommended-actions/:id" element={<ActionDetail />} /> */}
-              <Route path="/demo" element={<Demo />} />
+              <Route path="/recommended-actions/:id" element={<ActionDetail />} />
+              {/* <Route path="/demo" element={<Demo />} /> */}
               {/* Add other routes as needed */}
             </Routes>
           </main>
