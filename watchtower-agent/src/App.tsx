@@ -4,8 +4,11 @@ import Dashboard from './components/Dashboard';
 import NewsFeed from './components/NewsFeed';
 import ArticleDetail from './components/ArticleDetail';
 import ChatType from './components/ChatType';
+import RecommendedActions from './components/RecommendedActions';
+import ActionDetail from './components/ActionDetail';
 import { ThemeProvider } from './context/ThemeContext';
 import './App.css';
+import Demo from './components/Demo';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
               <Route path="/newsfeed" element={<NewsFeed />} />
               <Route path="/article/:id" element={<ArticleDetail />} />
               <Route path="/chat" element={<ChatType />} />
+              <Route path="/recommended-actions" element={<RecommendedActions />} />
+              <Route path="/recommended-actions/:id" element={<ActionDetail />} />
+              {/* <Route path="/demo" element={<Demo />} /> */}
               {/* Add other routes as needed */}
             </Routes>
           </main>

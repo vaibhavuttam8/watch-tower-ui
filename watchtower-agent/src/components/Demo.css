@@ -1,0 +1,632 @@
+/* Main Dashboard Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    height: 48px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trustwise-owl-logo {
+    height: 40px;
+    width: auto;
+}
+
+.trustwise-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a202c;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: #666;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.username {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.user-icon {
+    background-color: #f0f0f0;
+    color: #666;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: flex;
+    flex: 1;
+    background-color: #f5f7fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    border-right: 1px solid #eaeaea;
+    padding: 1.5rem 0;
+    height: calc(100vh - 48px);
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #666;
+    font-size: 0.875rem;
+    cursor: pointer;
+    gap: 0.75rem;
+}
+
+.sidebar-item:hover {
+    background-color: #f5f7fa;
+}
+
+.sidebar-icon {
+    width: 16px;
+    height: 16px;
+    color: #666;
+}
+
+.sidebar-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Main Panel Styles */
+.main-panel {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f5f7fa;
+}
+
+.dashboard-title {
+    margin-bottom: 1.5rem;
+}
+
+.dashboard-title h1 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.dashboard-title p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Search Bar */
+.search-container {
+    margin-bottom: 2rem;
+}
+
+.search-container form {
+    display: flex;
+    position: relative;
+    max-width: 600px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    padding-right: 3rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.search-container input.redirecting {
+    background-color: #f8fafc;
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+.search-container input::placeholder {
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.search-container input.redirecting::placeholder {
+    color: #6366f1;
+}
+
+.search-container button {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-container input.redirecting + button {
+    color: #6366f1;
+}
+
+.search-container svg {
+    width: 16px;
+    height: 16px;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.search-container input.redirecting + button svg {
+    color: #6366f1;
+}
+
+/* Metrics Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.metric-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.metric-header {
+    margin-bottom: 1rem;
+}
+
+.metric-header h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.metric-subtitle {
+    font-size: 0.75rem;
+    color: #666;
+    display: block;
+}
+
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Charts */
+.chart-container {
+    margin-top: 1rem;
+    height: 120px;
+    position: relative;
+}
+
+.chart-legend {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.legend-color {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.legend-color.purple {
+    background-color: #6366f1;
+}
+
+.legend-color.blue {
+    background-color: #3b82f6;
+}
+
+/* Donut Charts */
+.chart-with-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.donut-chart {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.chart-stats {
+    flex: 1;
+}
+
+.stat-item {
+    margin-bottom: 0.75rem;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.stat-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Safety Metrics */
+.safety-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.safety-metric-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.safety-metric-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.safety-metric-name {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.safety-metric-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.safety-metric-change {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.safety-metric-change.positive {
+    color: #10b981;
+}
+
+.safety-progress-bar {
+    height: 6px;
+    background-color: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.safety-progress-fill {
+    height: 100%;
+    background-color: #10b981;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+/* Alerts */
+.alerts-list {
+    margin-top: 1rem;
+}
+
+.alert-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.75rem;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-bottom: 0.75rem;
+    border-left: 3px solid;
+}
+
+.alert-item.critical {
+    border-left-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.alert-item.warning {
+    border-left-color: #f59e0b;
+    background-color: #fffbeb;
+}
+
+.alert-content {
+    flex: 1;
+    margin: 0 0.75rem;
+}
+
+.alert-content h4 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.alert-content p {
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.alert-type {
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.alert-item.critical .alert-type {
+    color: #ef4444;
+    background-color: #fee2e2;
+}
+
+.alert-item.warning .alert-type {
+    color: #f59e0b;
+    background-color: #fef3c7;
+}
+
+/* Use Cases */
+.use-cases-list {
+    margin-top: 1rem;
+}
+
+.use-case-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.use-case-name {
+    width: 120px;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.use-case-bar {
+    flex: 1;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.use-case-progress {
+    height: 100%;
+    background-color: #6366f1;
+    border-radius: 4px;
+}
+
+.use-case-value {
+    width: 60px;
+    text-align: right;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.total-value {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.total-value span:last-child {
+    font-weight: 500;
+}
+
+/* Department Adoption */
+.department-list {
+    margin-top: 1rem;
+}
+
+.department-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.department-name {
+    width: 120px;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.department-bar {
+    flex: 1;
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.department-progress {
+    height: 100%;
+    background-color: #10b981;
+    border-radius: 4px;
+}
+
+.department-count {
+    width: 70px;
+    text-align: right;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+/* Engineering Metrics */
+.engineering-metrics {
+    margin-top: 1rem;
+}
+
+.engineering-metric {
+    margin-bottom: 0.75rem;
+}
+
+.engineering-metric-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.engineering-metric-name {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.engineering-metric-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.engineering-bar {
+    height: 8px;
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.engineering-progress {
+    height: 100%;
+    background-color: #10b981;
+    border-radius: 4px;
+}
+
+.team-savings {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.team-savings span:last-child {
+    font-weight: 500;
+}
+
+/* Card Header with Badge */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.alert-badge {
+    background-color: #ef4444;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.125rem 0.5rem;
+    border-radius: 12px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.page-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.page-button.active {
+    background-color: #2c5282;
+}

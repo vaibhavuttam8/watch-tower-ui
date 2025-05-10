@@ -1,0 +1,277 @@
+.action-detail {
+  padding: 2rem;
+  color: var(--text-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.back-button:hover {
+  color: var(--text-secondary);
+}
+
+.action-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.action-detail-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.priority-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.priority-badge.high {
+  background-color: rgba(255, 99, 71, 0.1);
+  color: #ff6347;
+}
+
+.action-detail-meta {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meta-icon {
+  font-size: 1.5rem;
+}
+
+.meta-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.meta-value {
+  font-weight: 500;
+}
+
+.action-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.action-section h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.issue-count {
+  background-color: rgba(65, 105, 225, 0.1);
+  color: #4169e1;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.issues-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.issue-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.issue-number {
+  background-color: rgba(65, 105, 225, 0.1);
+  color: #4169e1;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.issue-title {
+  flex: 1;
+}
+
+.source-link {
+  color: #4169e1;
+  text-decoration: none;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
+.document-pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination-controls button {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.document-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.document-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.document-icon {
+  font-size: 1.5rem;
+}
+
+.document-info {
+  flex: 1;
+}
+
+.document-info h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.document-type {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.document-number {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.document-page {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page-number {
+  font-weight: 500;
+}
+
+.update-badge {
+  background-color: rgba(255, 99, 71, 0.1);
+  color: #ff6347;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.expand-button {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.page-content h4 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.page-content p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.page-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.preview-button,
+.open-tab-button,
+.section-button {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.preview-button:hover,
+.open-tab-button:hover,
+.section-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+} 

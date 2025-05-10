@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
   background-color: var(--color-bg-primary);
 }
 
@@ -46,7 +46,7 @@
 .chat-messages {
   flex: 1;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -91,6 +91,64 @@
   font-size: 1rem;
 }
 
+/* Styling for formatted HTML content */
+.message-text strong {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.message-text h3, .message-text h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.message-text h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.message-text h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.message-text ul, .message-text ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.message-text li {
+  margin-bottom: 0.25rem;
+}
+
+.message-text a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.message-text a:hover {
+  text-decoration: underline;
+}
+
+/* Citation link styling */
+.citation-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  background-color: var(--color-bg-tertiary);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.citation-link:hover {
+  background-color: var(--color-accent);
+  color: white !important;
+  text-decoration: none !important;
+}
+
 .message-time {
   font-size: 0.75rem;
   color: var(--color-text-secondary);
@@ -120,6 +178,32 @@
   border-radius: 9999px;
   font-size: 0.875rem;
   color: var(--color-text-secondary);
+  transition: all 0.3s ease;
+}
+
+/* Animation for highlighted source */
+@keyframes highlight-pulse {
+  0% { background-color: var(--color-bg-tertiary); }
+  50% { background-color: var(--color-accent); color: white; }
+  100% { background-color: var(--color-bg-tertiary); }
+}
+
+.highlighted-source {
+  animation: highlight-pulse 2s ease;
+}
+
+.source-link {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s;
+}
+
+.source-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
 }
 
 .source-count {
@@ -130,10 +214,11 @@
 .chat-input-form {
   display: flex;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: var(--color-bg-secondary);
   border-radius: 1rem;
   margin-top: auto;
+  width: 100%;
 }
 
 .chat-input {
